@@ -5,3 +5,10 @@ db.create_all() # para criar o banco
 db.session # para ver a sessao ativa
 
 db.session.commit() # para gravar as mudancas feitas no shell
+
+user = User(username="admin", password="123") #criar um registro
+
+db.session.add(user) # adiciona registro no banco
+
+
+db.session.commit() # para gravar as mudancas feitas no shell
