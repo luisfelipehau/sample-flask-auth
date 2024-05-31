@@ -1,0 +1,7 @@
+python -m flask shell # para rodar o flask shell no windows
+
+db.create_all() # para criar o banco
+
+db.session # para ver a sessao ativa
+
+db.session.commit() # para gravar as mudancas feitas no shell
