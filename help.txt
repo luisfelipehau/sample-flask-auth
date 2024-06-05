@@ -12,3 +12,6 @@ db.session.add(user) # adiciona registro no banco
 
 
 db.session.commit() # para gravar as mudancas feitas no shell
+
+
+docker-compose up # rodar na pasta do docker-compose.yml
