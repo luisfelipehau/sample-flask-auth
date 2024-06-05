@@ -15,3 +15,14 @@ db.session.commit() # para gravar as mudancas feitas no shell
 
 
 docker-compose up # rodar na pasta do docker-compose.yml
+
+#vamos adicionar uma nova tabela de role então precisa derrubar o banco todo e iniciar novamente para isso:
+
+db.drop_all()
+db.session.commit()
+
+# e depois de criada na nova comulna no model
+
+db.create_all()
+db.session.commit()
+exit()
